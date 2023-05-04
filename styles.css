@@ -2,7 +2,7 @@ body {
 	position: flex;
   margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
 	background-color: #fff;
 	color: #000;
   width:80%;
@@ -12,25 +12,30 @@ body {
 }
 
 header {
+  
 	background-color: #1323BA;
-	padding: 10px;
+	padding: 5px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  justify-content: space-between;
+	align-items: left;
 }
 
 nav ul {
 	list-style: none;
-	margin-top: 25px;
-  margin-bottom: 5px;
-	padding: 0.5em;
-	display: flex;
+	margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 0%;
+  margin-right:0%;
+ 	display: flex;
+  flex-direction: row;
+  background-color: #3b4bda;
 }
 
 nav ul li {
-	margin-top: 2em;
-  margin-bottom:1em;
+	margin-top: 0px;
+  margin-bottom:0px;
   padding: 15px;
+  background-color: #3b4bda;
 
 }
 
@@ -42,22 +47,22 @@ nav ul li:hover{
 nav ul li a {
   margin:auto;
 	color: #fff;
-	text-decoration: none;
-  font-weight: bold;
-  font-size: larger;
+	text-decoration: none;  
+  font-size: 1rem;
   
 }
 
 main {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px;
+	padding: 0px;
+  border-top: 50px;
 }
 
 .container {
 	width: 33.33%;
 	padding: 10px;
-	box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 .container img {
@@ -66,8 +71,13 @@ main {
 	cursor: pointer;
 }
 
+.container img:hover{
+  opacity: 0.5
+
+}
+
 #logo{
-  width: 70%;
+  width: 10%;
   height: auto;
 }
 
@@ -88,10 +98,24 @@ aside li {
 }
 
 aside a {
-	color: #1323BA;
+	color: #293bd4;
 	text-decoration: none;
 }
 
 #headerH{
   color:white;
+  justify-content: flex-start;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 0px;
+  margin-right: 50%;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+footer{
+  background-color: #1323BA;
+  color: #fff;
+  border: 2.5%;
+  padding: 2.5%;
 }
